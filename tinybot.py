@@ -7,7 +7,6 @@ SERVER = 'irc.hackint.eu'
 PORT = 6667
 NICKNAME = 'MarvinAutoBot'
 BUFSIZE = 4096
-HELLOMESSAGE = 'Ding Dong!'
 
 # bot class
 class bot:
@@ -63,7 +62,6 @@ class bot:
 		for chan in self.chans.split(','):
 			print 'join: ' + chan
 			self.sock.send('JOIN ' + chan + ' \n')
-			self.sock.send('PRIVMSG ' + chan + ' ' + HELLOMESSAGE)
 
 # initialize and connect bot
 mybot = bot(SERVER, PORT, NICKNAME)
