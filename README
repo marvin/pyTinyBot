@@ -1,0 +1,4 @@
+Tiny Random Python bot.
+
+look at the tinybot.py and change the constants to your needs.
+Does nothing more then to join given channels and sending a hello message.
